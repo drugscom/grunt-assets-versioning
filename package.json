@@ -33,7 +33,6 @@
     "grunt-contrib-jshint": "~2.0.0",
     "grunt-contrib-nodeunit": "~2.0.0",
     "grunt-jsdoc": "^2.3.0",
-    "lodash": "^4.17.11",
     "mock-fs": "^4.8.0"
   },
   "peerDependencies": {
@@ -43,6 +42,7 @@
     "gruntplugin"
   ],
   "dependencies": {
+    "lodash": "^4.17.11",
     "moment": "^2.24.0",
     "slash": "^2.0.0"
   },
