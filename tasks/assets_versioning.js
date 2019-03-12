@@ -1,6 +1,6 @@
 /*
  * grunt-assets-versioning
- * https://github.com/theasta/grunt-assets-versioning
+ * https://github.com/drugscom/grunt-assets-versioning
  *
  * Copyright (c) 2013 Alexandrine Boissière
  * Licensed under the MIT license.

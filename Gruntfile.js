@@ -1,5 +1,9 @@
 /*
- * grunt-assets-versioning
+ * @drugscom/grunt-assets-versioning
+ *
+ * https://github.com/drugscom/grunt-assets-versioning
+ *
+ * Forked from
  * https://github.com/theasta/grunt-assets-versioning
  *
  * Copyright (c) 2013 Alexandrine Boissière
