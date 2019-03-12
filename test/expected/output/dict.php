@@ -2,9 +2,9 @@
 class MyDict
 {
   public static $myDict = array(
-    "folder/subfolder/img3.png" => "folder/subfolder/img3.f69ba99c.png",
-    "img1.png" => "img1.0aab5fd0.png",
-    "img2.jpg" => "img2.ec1bd0de.jpg",
-    "folder/img2.gif" => "folder/img2.05953adc.gif",
+    "folder/subfolder/img3.png" => "folder/subfolder/img3.da76b855.png",
+    "img1.png" => "img1.8a5dc020.png",
+    "img2.jpg" => "img2.1dfac012.jpg",
+    "folder/img2.gif" => "folder/img2.6d88c930.gif",
   );
 }

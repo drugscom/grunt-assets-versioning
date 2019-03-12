@@ -7,6 +7,8 @@ var taggers = require('../taggers');
 var _ = require('lodash');
 var TaskClass = require('../helpers/task');
 var slash = require('slash');
+var debug = require('debug')('@drugscom/grunt-assets-versioning/tasks/versioners/abstractVersioner.js')
+debug('')
 
 /**
  * A grunt files configuration object
@@ -119,14 +121,18 @@ AbstractVersioner.prototype.getAssetsVersioningTaskConfigKey = function () {
  */
 AbstractVersioner.prototype.checkFilesObjValidity = function (filesObj, filesMapIndex, filesMapLength) {
   grunt.log.debug("Iterating through file mapping - " + ( filesMapIndex + 1 ) + "/" + filesMapLength);
-
+  grunt.log.debug("checkFilesObjValidity filesObj - ", filesObj);
+  grunt.log.debug("checkFilesObjValidity filesObj.src - ", filesObj.src);
+  grunt.log.debug("checkFilesObjValidity filesObj.src - ", filesObj.src);
+  //return filesObj.src;
+  
   var src = filesObj.src.filter(function (file) {
-    return grunt.file.isFile(file);
+    return grunt.file.exists(file);
   });
 
   grunt.log.debug('Source files: ', src);
   if (src.length === 0) {
-    grunt.log.debug(JSON.stringify(filesObj.orig));
+    grunt.log.debug('src.length === 0:', JSON.stringify(filesObj.orig));
     return false;
   }
 
@@ -167,6 +173,7 @@ AbstractVersioner.prototype.createPreVersioningSurrogateTask = function (task) {
 
   var filesMapLength = task.taskFiles.length;
   var filesMapSkipCount = 0;
+  debug('createPreVersioningSurrogateTask: task.taskFiles: ', task.taskFiles)
   task.taskFiles.forEach(function(taskFilesObj, index) {
     var src = this.checkFilesObjValidity(taskFilesObj, index, filesMapLength);
     if (!src) {
@@ -188,9 +195,10 @@ AbstractVersioner.prototype.createPreVersioningSurrogateTask = function (task) {
     // push to the map of versions
 
     var versionedPath = destFilePath.replace(this.options.versionsMapTrimPath, '');
-    if (_.contains(allVersionedPath, versionedPath)) {
+    if (_.includes(allVersionedPath, versionedPath)) {
       grunt.fail.warn("Duplicate versioned path detected: '" + versionedPath +"'.");
     } else {
+      debug('versionedPath: ', versionedPath)
       allVersionedPath.push(versionedPath);
       this.versionsMap.push({
         version: version,

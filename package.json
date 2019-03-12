@@ -1,50 +1,52 @@
 {
-  "name": "grunt-assets-versioning",
+  "name": "@drugscom/grunt-assets-versioning",
   "description": "Versioning static assets with Grunt",
   "version": "1.0.6",
-  "homepage": "https://github.com/theasta/grunt-assets-versioning",
+  "homepage": "https://github.com/drugscom/grunt-assets-versioning",
   "author": {
-    "name": "Alexandrine Boissière",
-    "email": "theasta@gmail.com"
+    "name": "Peter Simmons",
+    "email": "peter.simmons@drugs.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/theasta/grunt-assets-versioning.git"
+    "url": "git://github.com/drugscom/grunt-assets-versioning.git"
   },
   "bugs": {
-    "url": "https://github.com/theasta/grunt-assets-versioning/issues"
+    "url": "https://github.com/drugscom/grunt-assets-versioning/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/theasta/grunt-assets-versioning/blob/master/LICENSE-MIT"
+      "url": "https://github.com/drugscom/grunt-assets-versioning/blob/master/LICENSE-MIT"
     }
   ],
   "main": "Gruntfile.js",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 6"
   },
   "scripts": {
     "test": "grunt test"
   },
+  "license": "LICENSE_MIT",
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-clean": "~0.4.1",
-    "grunt-contrib-concat": "~0.2.0",
-    "grunt-contrib-jshint": "~0.1.1",
-    "grunt-contrib-nodeunit": "~0.1.2",
-    "grunt-jsdoc": "^0.6.1",
-    "mock-fs": "^2.3.1"
+    "debug": "^4.1.1",
+    "grunt": "~1.0.3",
+    "grunt-contrib-clean": "~2.0.0",
+    "grunt-contrib-concat": "~1.0.1",
+    "grunt-contrib-jshint": "~2.0.0",
+    "grunt-contrib-nodeunit": "~2.0.0",
+    "grunt-jsdoc": "^2.3.0",
+    "lodash": "^4.17.11",
+    "mock-fs": "^4.8.0"
   },
   "peerDependencies": {
-    "grunt": ">=0.4.0"
+    "grunt": ">=1"
   },
   "keywords": [
     "gruntplugin"
   ],
   "dependencies": {
-    "lodash": "^2.4.1",
-    "moment": "^2.9.0",
-    "slash": "^1.0.0"
+    "moment": "^2.24.0",
+    "slash": "^2.0.0"
   }
 }
