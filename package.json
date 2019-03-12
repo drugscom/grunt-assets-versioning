@@ -1,7 +1,7 @@
 {
   "name": "@drugscom/grunt-assets-versioning",
   "description": "Versioning static assets with Grunt",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "homepage": "https://github.com/drugscom/grunt-assets-versioning",
   "author": "Peter Simmons <peter.simmons@drugs.com>",
   "repository": {
