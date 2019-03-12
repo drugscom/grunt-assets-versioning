@@ -3,10 +3,7 @@
   "description": "Versioning static assets with Grunt",
   "version": "1.0.7",
   "homepage": "https://github.com/drugscom/grunt-assets-versioning",
-  "author": {
-    "name": "Peter Simmons",
-    "email": "peter.simmons@drugs.com"
-  },
+  "author": "Peter Simmons <peter.simmons@drugs.com>",
   "repository": {
     "type": "git",
     "url": "git://github.com/drugscom/grunt-assets-versioning.git"
@@ -27,7 +24,7 @@
   "scripts": {
     "test": "grunt test"
   },
-  "license": "LICENSE_MIT",
+  "license": "MIT",
   "devDependencies": {
     "debug": "^4.1.1",
     "grunt": "~1.0.3",
@@ -48,5 +45,8 @@
   "dependencies": {
     "moment": "^2.24.0",
     "slash": "^2.0.0"
+  },
+  "directories": {
+    "test": "test"
   }
 }
