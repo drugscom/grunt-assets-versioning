@@ -1,1 +1,7 @@
 test/
+# and .gitignore contents
+.idea
+node_modules
+npm-debug.log
+tmp
+docs
